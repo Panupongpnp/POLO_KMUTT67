@@ -1,1 +1,702 @@
-123
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>KMUTT 67 — 5 T-Shirt Designs</title>
+<link href="https://fonts.googleapis.com/css2?family=Russo+One&family=Teko:wght@600;700&family=Rajdhani:wght@600;700&family=Black+Ops+One&family=Sarabun:wght@400;700&family=Boogaloo&family=Exo+2:ital,wght@1,800;1,900&family=Righteous&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+
+:root{
+  --org: #F4622A;
+  --yel: #FDB827;
+  --wht: #FFFFFF;
+  --blk: #0D0D0D;
+}
+
+body{
+  background:#1a1a1a;
+  font-family:'Sarabun',sans-serif;
+  padding:30px 16px 60px;
+}
+
+h1.page-title{
+  text-align:center;
+  font-family:'Russo One',sans-serif;
+  font-size:clamp(1.4rem,4vw,2.2rem);
+  color:#fff;
+  margin-bottom:6px;
+  letter-spacing:0.06em;
+}
+.page-sub{
+  text-align:center;
+  font-size:0.8rem;
+  color:rgba(253,184,39,0.7);
+  letter-spacing:0.18em;
+  margin-bottom:36px;
+  text-transform:uppercase;
+}
+
+/* ── DESIGN CARD ── */
+.design-block{
+  max-width:900px;
+  margin:0 auto 56px;
+}
+.design-title{
+  display:flex;
+  align-items:center;
+  gap:12px;
+  margin-bottom:20px;
+}
+.design-num{
+  font-family:'Russo One',sans-serif;
+  font-size:2.2rem;
+  color:var(--org);
+  line-height:1;
+}
+.design-name{
+  flex:1;
+}
+.design-name h2{
+  font-family:'Teko',sans-serif;
+  font-size:1.6rem;
+  letter-spacing:0.08em;
+  color:#fff;
+  line-height:1;
+}
+.design-name p{
+  font-size:0.75rem;
+  color:rgba(255,255,255,0.45);
+  margin-top:2px;
+}
+.shirts-row{
+  display:flex;
+  gap:24px;
+  justify-content:center;
+  flex-wrap:wrap;
+}
+.shirt-wrap{
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  gap:8px;
+}
+.shirt-wrap span{
+  font-size:0.7rem;
+  letter-spacing:0.2em;
+  color:rgba(253,184,39,0.6);
+  text-transform:uppercase;
+  font-family:'Rajdhani',sans-serif;
+}
+svg.shirt{
+  width:min(360px,88vw);
+  filter:drop-shadow(0 12px 40px rgba(0,0,0,0.6));
+}
+.divider{
+  height:1px;
+  background:linear-gradient(90deg,transparent,rgba(244,98,42,0.4),transparent);
+  margin:10px 0 0;
+}
+
+/* Shirt shape path (reused via clip) */
+</style>
+</head>
+<body>
+
+<h1 class="page-title">KMUTT 67 — T-SHIRT DESIGNS</h1>
+<p class="page-sub">5 concepts · Sporty · Bold · Orange & Yellow</p>
+
+<!-- ══════════════════════════════════════════════════ -->
+<!--  DESIGN 1 — "FLAME BURST"                        -->
+<!-- ══════════════════════════════════════════════════ -->
+<div class="design-block">
+  <div class="design-title">
+    <div class="design-num">01</div>
+    <div class="design-name">
+      <h2>FLAME BURST</h2>
+      <p>พื้นขาว · เปลวไฟกระจายสีแสด-เหลือง · ฟอนต์ Exo 2 Italic</p>
+    </div>
+  </div>
+  <div class="shirts-row">
+    <!-- FRONT -->
+    <div class="shirt-wrap">
+      <svg class="shirt" viewBox="0 0 380 440" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <linearGradient id="f1bg" x1="0" y1="1" x2="0" y2="0">
+            <stop offset="0%" stop-color="#fff"/>
+            <stop offset="100%" stop-color="#FFF8F5"/>
+          </linearGradient>
+          <linearGradient id="f1flame" x1="0" y1="1" x2="0.3" y2="0">
+            <stop offset="0%" stop-color="#F4622A"/>
+            <stop offset="50%" stop-color="#FDB827"/>
+            <stop offset="100%" stop-color="#FFF0C0" stop-opacity="0"/>
+          </linearGradient>
+          <linearGradient id="f1flame2" x1="1" y1="1" x2="0.7" y2="0">
+            <stop offset="0%" stop-color="#F4622A"/>
+            <stop offset="60%" stop-color="#FDB827" stop-opacity="0.6"/>
+            <stop offset="100%" stop-color="#FFF0C0" stop-opacity="0"/>
+          </linearGradient>
+          <linearGradient id="f1oy" x1="0" y1="0" x2="1" y2="0">
+            <stop offset="0%" stop-color="#F4622A"/>
+            <stop offset="100%" stop-color="#FDB827"/>
+          </linearGradient>
+          <clipPath id="sc1">
+            <path d="M78,4 L28,32 L2,92 L52,110 L52,434 L328,434 L328,110 L378,92 L352,32 L302,4 L262,46 C242,66 222,73 190,73 C158,73 138,66 118,46 Z"/>
+          </clipPath>
+          <filter id="blur1"><feGaussianBlur stdDeviation="8"/></filter>
+        </defs>
+        <!-- Body -->
+        <path d="M78,4 L28,32 L2,92 L52,110 L52,434 L328,434 L328,110 L378,92 L352,32 L302,4 L262,46 C242,66 222,73 190,73 C158,73 138,66 118,46 Z" fill="url(#f1bg)" stroke="#E0E0E0" stroke-width="1"/>
+        <!-- Left flame blob -->
+        <g clip-path="url(#sc1)">
+          <ellipse cx="70" cy="380" rx="90" ry="160" fill="url(#f1flame)" opacity="0.85"/>
+          <ellipse cx="60" cy="400" rx="60" ry="110" fill="#F4622A" opacity="0.3" filter="url(#blur1)"/>
+          <!-- flame tongues left -->
+          <path d="M50,434 Q60,380 40,330 Q55,360 70,300 Q80,350 65,280 Q90,330 80,260 Q110,320 90,240" fill="url(#f1flame)" opacity="0.7" stroke="none"/>
+          <!-- Right flame -->
+          <ellipse cx="310" cy="390" rx="80" ry="140" fill="url(#f1flame2)" opacity="0.7"/>
+          <path d="M330,434 Q315,375 335,320 Q320,355 305,295 Q295,345 310,275 Q285,325 295,255" fill="url(#f1flame2)" opacity="0.6" stroke="none"/>
+          <!-- Collar stripe -->
+          <rect x="52" y="106" width="276" height="8" fill="url(#f1oy)"/>
+          <!-- Diagonal slash accent -->
+          <path d="M52,200 L170,110" stroke="url(#f1oy)" stroke-width="3" opacity="0.25"/>
+          <path d="M52,240 L200,110" stroke="url(#f1oy)" stroke-width="2" opacity="0.15"/>
+        </g>
+        <!-- KMUTT 67 text -->
+        <text x="190" y="255" text-anchor="middle" font-family="'Exo 2',sans-serif" font-style="italic" font-weight="900" font-size="52" fill="url(#f1oy)" opacity="0.12">KMUTT</text>
+        <text x="190" y="220" text-anchor="middle" font-family="'Exo 2',sans-serif" font-style="italic" font-weight="900" font-size="38" fill="#F4622A" stroke="#fff" stroke-width="3" paint-order="stroke">KMUTT</text>
+        <text x="190" y="258" text-anchor="middle" font-family="'Exo 2',sans-serif" font-style="italic" font-weight="900" font-size="50" fill="url(#f1oy)" stroke="#fff" stroke-width="4" paint-order="stroke">67</text>
+        <!-- Ant icon small -->
+        <g transform="translate(148,168) scale(0.5)">
+          <ellipse cx="0" cy="16" rx="11" ry="14" fill="none" stroke="#F4622A" stroke-width="2"/>
+          <ellipse cx="0" cy="-2" rx="7" ry="7" fill="none" stroke="#F4622A" stroke-width="2"/>
+          <ellipse cx="0" cy="-16" rx="7" ry="6" fill="none" stroke="#F4622A" stroke-width="2"/>
+          <path d="M-3,-22 Q-12,-34 -8,-42" fill="none" stroke="#FDB827" stroke-width="1.8"/>
+          <path d="M3,-22 Q12,-34 8,-42" fill="none" stroke="#FDB827" stroke-width="1.8"/>
+          <path d="M-7,0 Q-20,4 -24,-4" fill="none" stroke="#F4622A" stroke-width="1.5"/>
+          <path d="M7,0 Q20,4 24,-4" fill="none" stroke="#F4622A" stroke-width="1.5"/>
+          <path d="M-7,6 Q-20,12 -22,22" fill="none" stroke="#F4622A" stroke-width="1.5"/>
+          <path d="M7,6 Q20,12 22,22" fill="none" stroke="#F4622A" stroke-width="1.5"/>
+          <path d="M-8,20 Q-18,28 -18,36" fill="none" stroke="#F4622A" stroke-width="1.5"/>
+          <path d="M8,20 Q18,28 18,36" fill="none" stroke="#F4622A" stroke-width="1.5"/>
+        </g>
+        <!-- Flower petals small -->
+        <g transform="translate(232,168) scale(0.45)">
+          <ellipse cx="0" cy="-22" rx="6" ry="12" fill="rgba(253,184,39,0.5)" stroke="#FDB827" stroke-width="1.5"/>
+          <ellipse cx="0" cy="-22" rx="6" ry="12" fill="rgba(253,184,39,0.5)" stroke="#FDB827" stroke-width="1.5" transform="rotate(45)"/>
+          <ellipse cx="0" cy="-22" rx="6" ry="12" fill="rgba(253,184,39,0.5)" stroke="#FDB827" stroke-width="1.5" transform="rotate(90)"/>
+          <ellipse cx="0" cy="-22" rx="6" ry="12" fill="rgba(253,184,39,0.5)" stroke="#FDB827" stroke-width="1.5" transform="rotate(135)"/>
+          <circle cx="0" cy="0" r="4" fill="#FDB827"/>
+        </g>
+        <!-- Bottom band -->
+        <rect x="52" y="420" width="276" height="14" fill="url(#f1oy)" clip-path="url(#sc1)"/>
+        <!-- Sleeve bands -->
+        <path d="M28,32 L52,110" stroke="url(#f1oy)" stroke-width="5" opacity="0.8"/>
+        <path d="M352,32 L328,110" stroke="url(#f1oy)" stroke-width="5" opacity="0.8"/>
+      </svg>
+      <span>// Front</span>
+    </div>
+    <!-- BACK -->
+    <div class="shirt-wrap">
+      <svg class="shirt" viewBox="0 0 380 440" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <clipPath id="sc1b">
+            <path d="M78,4 L28,32 L2,92 L52,110 L52,434 L328,434 L328,110 L378,92 L352,32 L302,4 L262,46 C242,66 222,73 190,73 C158,73 138,66 118,46 Z"/>
+          </clipPath>
+        </defs>
+        <path d="M78,4 L28,32 L2,92 L52,110 L52,434 L328,434 L328,110 L378,92 L352,32 L302,4 L262,46 C242,66 222,73 190,73 C158,73 138,66 118,46 Z" fill="url(#f1bg)" stroke="#E0E0E0" stroke-width="1"/>
+        <g clip-path="url(#sc1b)">
+          <ellipse cx="70" cy="380" rx="90" ry="160" fill="url(#f1flame)" opacity="0.85"/>
+          <path d="M50,434 Q60,380 40,330 Q55,360 70,300 Q80,350 65,280 Q90,330 80,260 Q110,320 90,240" fill="url(#f1flame)" opacity="0.7"/>
+          <ellipse cx="310" cy="390" rx="80" ry="140" fill="url(#f1flame2)" opacity="0.7"/>
+          <path d="M330,434 Q315,375 335,320 Q320,355 305,295 Q295,345 310,275 Q285,325 295,255" fill="url(#f1flame2)" opacity="0.6"/>
+          <rect x="52" y="106" width="276" height="8" fill="url(#f1oy)"/>
+          <rect x="52" y="420" width="276" height="14" fill="url(#f1oy)"/>
+        </g>
+        <!-- Big 67 ghost -->
+        <text x="190" y="290" text-anchor="middle" font-family="'Exo 2',sans-serif" font-style="italic" font-weight="900" font-size="180" fill="none" stroke="rgba(244,98,42,0.1)" stroke-width="1" clip-path="url(#sc1b)">67</text>
+        <!-- Main back text -->
+        <text x="190" y="230" text-anchor="middle" font-family="'Exo 2',sans-serif" font-style="italic" font-weight="900" font-size="64" fill="#F4622A" stroke="#fff" stroke-width="5" paint-order="stroke">KMUTT</text>
+        <text x="190" y="290" text-anchor="middle" font-family="'Exo 2',sans-serif" font-style="italic" font-weight="900" font-size="68" fill="url(#f1oy)" stroke="#fff" stroke-width="5" paint-order="stroke">67</text>
+        <text x="190" y="316" text-anchor="middle" font-family="'Rajdhani',sans-serif" font-weight="700" font-size="11" letter-spacing="5" fill="#F4622A">FRESHMAN · 2024</text>
+        <path d="M28,32 L52,110" stroke="url(#f1oy)" stroke-width="5" opacity="0.8"/>
+        <path d="M352,32 L328,110" stroke="url(#f1oy)" stroke-width="5" opacity="0.8"/>
+      </svg>
+      <span>// Back</span>
+    </div>
+  </div>
+  <div class="divider"></div>
+</div>
+
+<!-- ══════════════════════════════════════════════════ -->
+<!--  DESIGN 2 — "DIAGONAL STRIKE"                    -->
+<!-- ══════════════════════════════════════════════════ -->
+<div class="design-block">
+  <div class="design-title">
+    <div class="design-num">02</div>
+    <div class="design-name">
+      <h2>DIAGONAL STRIKE</h2>
+      <p>พื้นขาว · แถบ Slash เฉียงสีแสด · ฟอนต์ Black Ops One ตัดเหลือง</p>
+    </div>
+  </div>
+  <div class="shirts-row">
+    <!-- FRONT -->
+    <div class="shirt-wrap">
+      <svg class="shirt" viewBox="0 0 380 440" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <clipPath id="sc2">
+            <path d="M78,4 L28,32 L2,92 L52,110 L52,434 L328,434 L328,110 L378,92 L352,32 L302,4 L262,46 C242,66 222,73 190,73 C158,73 138,66 118,46 Z"/>
+          </clipPath>
+          <linearGradient id="d2oy" x1="0" y1="0" x2="1" y2="0">
+            <stop offset="0%" stop-color="#F4622A"/>
+            <stop offset="100%" stop-color="#FDB827"/>
+          </linearGradient>
+          <linearGradient id="d2bg" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0%" stop-color="#fff"/>
+            <stop offset="100%" stop-color="#FFF9F6"/>
+          </linearGradient>
+        </defs>
+        <path d="M78,4 L28,32 L2,92 L52,110 L52,434 L328,434 L328,110 L378,92 L352,32 L302,4 L262,46 C242,66 222,73 190,73 C158,73 138,66 118,46 Z" fill="url(#d2bg)" stroke="#ddd" stroke-width="1"/>
+        <g clip-path="url(#sc2)">
+          <!-- Big diagonal orange band -->
+          <polygon points="52,300 328,130 328,190 52,370" fill="#F4622A"/>
+          <!-- Yellow highlight stripe inside -->
+          <polygon points="52,335 328,165 328,180 52,350" fill="#FDB827"/>
+          <!-- Top left triangle -->
+          <polygon points="52,110 230,110 52,260" fill="#F4622A" opacity="0.15"/>
+          <!-- Bottom right triangle -->
+          <polygon points="328,290 328,434 150,434" fill="#F4622A" opacity="0.12"/>
+          <!-- collar band -->
+          <rect x="52" y="106" width="276" height="10" fill="#F4622A"/>
+          <rect x="52" y="106" width="276" height="3" fill="#FDB827"/>
+        </g>
+        <!-- Left chest text -->
+        <text x="108" y="175" text-anchor="middle" font-family="'Black Ops One',cursive" font-size="13" letter-spacing="1.5" fill="#F4622A">KMUTT</text>
+        <!-- Main center - angled -->
+        <g transform="translate(190,270) rotate(-8)">
+          <text x="0" y="0" text-anchor="middle" font-family="'Black Ops One',cursive" font-size="48" fill="#fff" stroke="#F4622A" stroke-width="3" paint-order="stroke">KMUTT</text>
+          <text x="0" y="52" text-anchor="middle" font-family="'Black Ops One',cursive" font-size="60" fill="#FDB827" stroke="#fff" stroke-width="4" paint-order="stroke">67</text>
+        </g>
+        <!-- Small ant -->
+        <g transform="translate(106,152) scale(0.45)">
+          <ellipse cx="0" cy="16" rx="11" ry="14" fill="none" stroke="#fff" stroke-width="2"/>
+          <ellipse cx="0" cy="-2" rx="7" ry="7" fill="none" stroke="#fff" stroke-width="2"/>
+          <ellipse cx="0" cy="-16" rx="7" ry="6" fill="none" stroke="#fff" stroke-width="2"/>
+          <path d="M-3,-22 Q-12,-34 -8,-42" fill="none" stroke="#FDB827" stroke-width="1.8"/>
+          <path d="M3,-22 Q12,-34 8,-42" fill="none" stroke="#FDB827" stroke-width="1.8"/>
+          <path d="M-7,0 Q-20,4 -24,-4" fill="none" stroke="#fff" stroke-width="1.5"/>
+          <path d="M7,0 Q20,4 24,-4" fill="none" stroke="#fff" stroke-width="1.5"/>
+          <path d="M-7,6 Q-20,12 -22,22" fill="none" stroke="#fff" stroke-width="1.5"/>
+          <path d="M7,6 Q20,12 22,22" fill="none" stroke="#fff" stroke-width="1.5"/>
+          <path d="M-8,20 Q-18,28 -18,36" fill="none" stroke="#fff" stroke-width="1.5"/>
+          <path d="M8,20 Q18,28 18,36" fill="none" stroke="#fff" stroke-width="1.5"/>
+        </g>
+        <!-- Sleeve bands -->
+        <path d="M28,32 L52,110" stroke="#F4622A" stroke-width="8"/>
+        <path d="M30,50 L54,120" stroke="#FDB827" stroke-width="3"/>
+        <path d="M352,32 L328,110" stroke="#F4622A" stroke-width="8"/>
+        <path d="M350,50 L326,120" stroke="#FDB827" stroke-width="3"/>
+      </svg>
+      <span>// Front</span>
+    </div>
+    <!-- BACK -->
+    <div class="shirt-wrap">
+      <svg class="shirt" viewBox="0 0 380 440" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <clipPath id="sc2b">
+            <path d="M78,4 L28,32 L2,92 L52,110 L52,434 L328,434 L328,110 L378,92 L352,32 L302,4 L262,46 C242,66 222,73 190,73 C158,73 138,66 118,46 Z"/>
+          </clipPath>
+        </defs>
+        <path d="M78,4 L28,32 L2,92 L52,110 L52,434 L328,434 L328,110 L378,92 L352,32 L302,4 L262,46 C242,66 222,73 190,73 C158,73 138,66 118,46 Z" fill="url(#d2bg)" stroke="#ddd" stroke-width="1"/>
+        <g clip-path="url(#sc2b)">
+          <polygon points="52,300 328,130 328,190 52,370" fill="#F4622A"/>
+          <polygon points="52,335 328,165 328,180 52,350" fill="#FDB827"/>
+          <polygon points="52,110 230,110 52,260" fill="#F4622A" opacity="0.15"/>
+          <polygon points="328,290 328,434 150,434" fill="#F4622A" opacity="0.12"/>
+          <rect x="52" y="106" width="276" height="10" fill="#F4622A"/>
+          <rect x="52" y="106" width="276" height="3" fill="#FDB827"/>
+        </g>
+        <!-- Back large text centered -->
+        <text x="190" y="210" text-anchor="middle" font-family="'Black Ops One',cursive" font-size="72" fill="#F4622A" stroke="#fff" stroke-width="5" paint-order="stroke">KMUTT</text>
+        <text x="190" y="290" text-anchor="middle" font-family="'Black Ops One',cursive" font-size="88" fill="#FDB827" stroke="#F4622A" stroke-width="4" paint-order="stroke">67</text>
+        <text x="190" y="320" text-anchor="middle" font-family="'Rajdhani',sans-serif" font-weight="700" font-size="12" letter-spacing="4" fill="#fff">KING MONGKUT'S UNIVERSITY</text>
+        <text x="190" y="338" text-anchor="middle" font-family="'Rajdhani',sans-serif" font-weight="700" font-size="12" letter-spacing="4" fill="#fff">OF TECHNOLOGY THONBURI</text>
+        <path d="M28,32 L52,110" stroke="#F4622A" stroke-width="8"/>
+        <path d="M352,32 L328,110" stroke="#F4622A" stroke-width="8"/>
+      </svg>
+      <span>// Back</span>
+    </div>
+  </div>
+  <div class="divider"></div>
+</div>
+
+<!-- ══════════════════════════════════════════════════ -->
+<!--  DESIGN 3 — "GRADIENT SPORT"                     -->
+<!-- ══════════════════════════════════════════════════ -->
+<div class="design-block">
+  <div class="design-title">
+    <div class="design-num">03</div>
+    <div class="design-name">
+      <h2>GRADIENT SPORT</h2>
+      <p>Gradient แสด→เหลือง เต็มตัว · ลายกราฟ wave · ฟอนต์ Teko + outline ขาว</p>
+    </div>
+  </div>
+  <div class="shirts-row">
+    <div class="shirt-wrap">
+      <svg class="shirt" viewBox="0 0 380 440" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <linearGradient id="g3main" x1="0" y1="0" x2="0.4" y2="1">
+            <stop offset="0%" stop-color="#F4622A"/>
+            <stop offset="55%" stop-color="#F97B2A"/>
+            <stop offset="100%" stop-color="#FDB827"/>
+          </linearGradient>
+          <linearGradient id="g3wave" x1="0" y1="0" x2="1" y2="0">
+            <stop offset="0%" stop-color="rgba(255,255,255,0.18)"/>
+            <stop offset="50%" stop-color="rgba(255,255,255,0.04)"/>
+            <stop offset="100%" stop-color="rgba(255,255,255,0.18)"/>
+          </linearGradient>
+          <clipPath id="sc3">
+            <path d="M78,4 L28,32 L2,92 L52,110 L52,434 L328,434 L328,110 L378,92 L352,32 L302,4 L262,46 C242,66 222,73 190,73 C158,73 138,66 118,46 Z"/>
+          </clipPath>
+        </defs>
+        <path d="M78,4 L28,32 L2,92 L52,110 L52,434 L328,434 L328,110 L378,92 L352,32 L302,4 L262,46 C242,66 222,73 190,73 C158,73 138,66 118,46 Z" fill="url(#g3main)" stroke="#E05020" stroke-width="1"/>
+        <g clip-path="url(#sc3)">
+          <!-- Wave stripes -->
+          <path d="M52,200 Q120,180 190,200 Q260,220 328,200 L328,225 Q260,245 190,225 Q120,205 52,225 Z" fill="rgba(255,255,255,0.12)"/>
+          <path d="M52,240 Q120,220 190,240 Q260,260 328,240 L328,258 Q260,278 190,258 Q120,238 52,258 Z" fill="rgba(255,255,255,0.08)"/>
+          <path d="M52,280 Q120,260 190,280 Q260,300 328,280 L328,295 Q260,315 190,295 Q120,275 52,295 Z" fill="rgba(255,255,255,0.06)"/>
+          <!-- Left panel white -->
+          <path d="M52,110 L52,434 L110,434 L52,200 Z" fill="rgba(255,255,255,0.07)"/>
+          <!-- collar -->
+          <rect x="52" y="106" width="276" height="6" fill="rgba(255,255,255,0.4)"/>
+          <!-- bottom band -->
+          <rect x="52" y="425" width="276" height="9" fill="rgba(255,255,255,0.3)"/>
+        </g>
+        <!-- Chest left badge -->
+        <g transform="translate(106,156)">
+          <rect x="-28" y="-20" width="56" height="40" rx="4" fill="rgba(255,255,255,0.2)" stroke="rgba(255,255,255,0.6)" stroke-width="1"/>
+          <text x="0" y="-5" text-anchor="middle" font-family="'Teko',sans-serif" font-weight="700" font-size="10" letter-spacing="1" fill="#fff">KMUTT</text>
+          <text x="0" y="12" text-anchor="middle" font-family="'Teko',sans-serif" font-weight="700" font-size="14" fill="#FDB827">67</text>
+        </g>
+        <!-- Center big text -->
+        <text x="192" y="290" text-anchor="middle" font-family="'Teko',sans-serif" font-weight="700" font-size="54" fill="none" stroke="rgba(255,255,255,0.25)" stroke-width="6">KMUTT 67</text>
+        <text x="190" y="288" text-anchor="middle" font-family="'Teko',sans-serif" font-weight="700" font-size="54" fill="#fff">KMUTT 67</text>
+        <!-- Ant + flower row -->
+        <g transform="translate(170,200) scale(0.4)">
+          <ellipse cx="0" cy="16" rx="11" ry="14" fill="none" stroke="#fff" stroke-width="2.5"/>
+          <ellipse cx="0" cy="-2" rx="7" ry="7" fill="none" stroke="#fff" stroke-width="2.5"/>
+          <ellipse cx="0" cy="-16" rx="7" ry="6" fill="none" stroke="#fff" stroke-width="2.5"/>
+          <path d="M-3,-22 Q-12,-34 -8,-42" fill="none" stroke="#FDB827" stroke-width="2"/>
+          <path d="M3,-22 Q12,-34 8,-42" fill="none" stroke="#FDB827" stroke-width="2"/>
+          <path d="M-7,0 Q-20,4 -24,-4" fill="none" stroke="rgba(255,255,255,0.7)" stroke-width="1.8"/>
+          <path d="M7,0 Q20,4 24,-4" fill="none" stroke="rgba(255,255,255,0.7)" stroke-width="1.8"/>
+          <path d="M-7,6 Q-20,12 -22,22" fill="none" stroke="rgba(255,255,255,0.7)" stroke-width="1.8"/>
+          <path d="M7,6 Q20,12 22,22" fill="none" stroke="rgba(255,255,255,0.7)" stroke-width="1.8"/>
+          <path d="M-8,20 Q-18,28 -18,36" fill="none" stroke="rgba(255,255,255,0.7)" stroke-width="1.8"/>
+          <path d="M8,20 Q18,28 18,36" fill="none" stroke="rgba(255,255,255,0.7)" stroke-width="1.8"/>
+        </g>
+        <g transform="translate(210,200) scale(0.4)">
+          <ellipse cx="0" cy="-22" rx="7" ry="14" fill="rgba(255,255,255,0.3)" stroke="#fff" stroke-width="2"/>
+          <ellipse cx="0" cy="-22" rx="7" ry="14" fill="rgba(255,255,255,0.3)" stroke="#fff" stroke-width="2" transform="rotate(60)"/>
+          <ellipse cx="0" cy="-22" rx="7" ry="14" fill="rgba(255,255,255,0.3)" stroke="#fff" stroke-width="2" transform="rotate(120)"/>
+          <ellipse cx="0" cy="-22" rx="7" ry="14" fill="rgba(255,255,255,0.3)" stroke="#fff" stroke-width="2" transform="rotate(180)"/>
+          <ellipse cx="0" cy="-22" rx="7" ry="14" fill="rgba(255,255,255,0.3)" stroke="#fff" stroke-width="2" transform="rotate(240)"/>
+          <ellipse cx="0" cy="-22" rx="7" ry="14" fill="rgba(255,255,255,0.3)" stroke="#fff" stroke-width="2" transform="rotate(300)"/>
+          <circle cx="0" cy="0" r="5" fill="#FDB827"/>
+        </g>
+        <!-- Sleeve white stripes -->
+        <path d="M28,32 L52,110" stroke="rgba(255,255,255,0.5)" stroke-width="4"/>
+        <path d="M33,50 L57,125" stroke="rgba(255,255,255,0.25)" stroke-width="2.5"/>
+        <path d="M352,32 L328,110" stroke="rgba(255,255,255,0.5)" stroke-width="4"/>
+        <path d="M347,50 L323,125" stroke="rgba(255,255,255,0.25)" stroke-width="2.5"/>
+      </svg>
+      <span>// Front</span>
+    </div>
+    <div class="shirt-wrap">
+      <svg class="shirt" viewBox="0 0 380 440" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <clipPath id="sc3b">
+            <path d="M78,4 L28,32 L2,92 L52,110 L52,434 L328,434 L328,110 L378,92 L352,32 L302,4 L262,46 C242,66 222,73 190,73 C158,73 138,66 118,46 Z"/>
+          </clipPath>
+        </defs>
+        <path d="M78,4 L28,32 L2,92 L52,110 L52,434 L328,434 L328,110 L378,92 L352,32 L302,4 L262,46 C242,66 222,73 190,73 C158,73 138,66 118,46 Z" fill="url(#g3main)" stroke="#E05020" stroke-width="1"/>
+        <g clip-path="url(#sc3b)">
+          <path d="M52,200 Q120,180 190,200 Q260,220 328,200 L328,225 Q260,245 190,225 Q120,205 52,225 Z" fill="rgba(255,255,255,0.12)"/>
+          <path d="M52,240 Q120,220 190,240 Q260,260 328,240 L328,258 Q260,278 190,258 Q120,238 52,258 Z" fill="rgba(255,255,255,0.08)"/>
+          <rect x="52" y="106" width="276" height="6" fill="rgba(255,255,255,0.4)"/>
+          <rect x="52" y="425" width="276" height="9" fill="rgba(255,255,255,0.3)"/>
+        </g>
+        <text x="190" y="215" text-anchor="middle" font-family="'Teko',sans-serif" font-weight="700" font-size="76" fill="none" stroke="rgba(255,255,255,0.2)" stroke-width="6">KMUTT</text>
+        <text x="190" y="213" text-anchor="middle" font-family="'Teko',sans-serif" font-weight="700" font-size="76" fill="#fff">KMUTT</text>
+        <text x="190" y="300" text-anchor="middle" font-family="'Teko',sans-serif" font-weight="700" font-size="96" fill="none" stroke="rgba(255,255,255,0.2)" stroke-width="6">67</text>
+        <text x="190" y="298" text-anchor="middle" font-family="'Teko',sans-serif" font-weight="700" font-size="96" fill="#fff">67</text>
+        <text x="190" y="325" text-anchor="middle" font-family="'Rajdhani',sans-serif" font-weight="700" font-size="10" letter-spacing="4" fill="rgba(255,255,255,0.7)">FRESHMAN · KMUTT</text>
+        <!-- Ant colony back bottom -->
+        <g transform="translate(100,390)" opacity="0.5">
+          <g transform="scale(0.3)"><ellipse cx="0" cy="16" rx="11" ry="14" fill="none" stroke="#fff" stroke-width="2.5"/><ellipse cx="0" cy="-2" rx="7" ry="7" fill="none" stroke="#fff" stroke-width="2.5"/><ellipse cx="0" cy="-16" rx="7" ry="6" fill="none" stroke="#fff" stroke-width="2.5"/><path d="M-3,-22 Q-8,-32 -5,-38" fill="none" stroke="#FDB827" stroke-width="2"/><path d="M3,-22 Q8,-32 5,-38" fill="none" stroke="#FDB827" stroke-width="2"/><path d="M-7,0 Q-18,4 -20,-4" fill="none" stroke="#fff" stroke-width="1.8"/><path d="M7,0 Q18,4 20,-4" fill="none" stroke="#fff" stroke-width="1.8"/><path d="M-7,6 Q-18,12 -20,20" fill="none" stroke="#fff" stroke-width="1.8"/><path d="M7,6 Q18,12 20,20" fill="none" stroke="#fff" stroke-width="1.8"/></g>
+          <g transform="translate(28,0) scale(0.3)"><ellipse cx="0" cy="16" rx="11" ry="14" fill="none" stroke="#FDB827" stroke-width="2.5"/><ellipse cx="0" cy="-2" rx="7" ry="7" fill="none" stroke="#FDB827" stroke-width="2.5"/><ellipse cx="0" cy="-16" rx="7" ry="6" fill="none" stroke="#FDB827" stroke-width="2.5"/><path d="M-3,-22 Q-8,-32 -5,-38" fill="none" stroke="#fff" stroke-width="2"/><path d="M3,-22 Q8,-32 5,-38" fill="none" stroke="#fff" stroke-width="2"/><path d="M-7,0 Q-18,4 -20,-4" fill="none" stroke="#FDB827" stroke-width="1.8"/><path d="M7,0 Q18,4 20,-4" fill="none" stroke="#FDB827" stroke-width="1.8"/><path d="M-7,6 Q-18,12 -20,20" fill="none" stroke="#FDB827" stroke-width="1.8"/><path d="M7,6 Q18,12 20,20" fill="none" stroke="#FDB827" stroke-width="1.8"/></g>
+          <g transform="translate(56,0) scale(0.3)"><ellipse cx="0" cy="16" rx="11" ry="14" fill="none" stroke="#fff" stroke-width="2.5"/><ellipse cx="0" cy="-2" rx="7" ry="7" fill="none" stroke="#fff" stroke-width="2.5"/><ellipse cx="0" cy="-16" rx="7" ry="6" fill="none" stroke="#fff" stroke-width="2.5"/><path d="M-3,-22 Q-8,-32 -5,-38" fill="none" stroke="#FDB827" stroke-width="2"/><path d="M3,-22 Q8,-32 5,-38" fill="none" stroke="#FDB827" stroke-width="2"/><path d="M-7,0 Q-18,4 -20,-4" fill="none" stroke="#fff" stroke-width="1.8"/><path d="M7,0 Q18,4 20,-4" fill="none" stroke="#fff" stroke-width="1.8"/><path d="M-7,6 Q-18,12 -20,20" fill="none" stroke="#fff" stroke-width="1.8"/><path d="M7,6 Q18,12 20,20" fill="none" stroke="#fff" stroke-width="1.8"/></g>
+          <g transform="translate(84,0) scale(0.3)"><ellipse cx="0" cy="16" rx="11" ry="14" fill="none" stroke="#FDB827" stroke-width="2.5"/><ellipse cx="0" cy="-2" rx="7" ry="7" fill="none" stroke="#FDB827" stroke-width="2.5"/><ellipse cx="0" cy="-16" rx="7" ry="6" fill="none" stroke="#FDB827" stroke-width="2.5"/><path d="M-3,-22 Q-8,-32 -5,-38" fill="none" stroke="#fff" stroke-width="2"/><path d="M3,-22 Q8,-32 5,-38" fill="none" stroke="#fff" stroke-width="2"/><path d="M-7,0 Q-18,4 -20,-4" fill="none" stroke="#FDB827" stroke-width="1.8"/><path d="M7,0 Q18,4 20,-4" fill="none" stroke="#FDB827" stroke-width="1.8"/><path d="M-7,6 Q-18,12 -20,20" fill="none" stroke="#FDB827" stroke-width="1.8"/><path d="M7,6 Q18,12 20,20" fill="none" stroke="#FDB827" stroke-width="1.8"/></g>
+          <g transform="translate(112,0) scale(0.3)"><ellipse cx="0" cy="16" rx="11" ry="14" fill="none" stroke="#fff" stroke-width="2.5"/><ellipse cx="0" cy="-2" rx="7" ry="7" fill="none" stroke="#fff" stroke-width="2.5"/><ellipse cx="0" cy="-16" rx="7" ry="6" fill="none" stroke="#fff" stroke-width="2.5"/><path d="M-3,-22 Q-8,-32 -5,-38" fill="none" stroke="#FDB827" stroke-width="2"/><path d="M3,-22 Q8,-32 5,-38" fill="none" stroke="#FDB827" stroke-width="2"/><path d="M-7,0 Q-18,4 -20,-4" fill="none" stroke="#fff" stroke-width="1.8"/><path d="M7,0 Q18,4 20,-4" fill="none" stroke="#fff" stroke-width="1.8"/><path d="M-7,6 Q-18,12 -20,20" fill="none" stroke="#fff" stroke-width="1.8"/><path d="M7,6 Q18,12 20,20" fill="none" stroke="#fff" stroke-width="1.8"/></g>
+          <g transform="translate(140,0) scale(0.3)"><ellipse cx="0" cy="16" rx="11" ry="14" fill="none" stroke="#FDB827" stroke-width="2.5"/><ellipse cx="0" cy="-2" rx="7" ry="7" fill="none" stroke="#FDB827" stroke-width="2.5"/><ellipse cx="0" cy="-16" rx="7" ry="6" fill="none" stroke="#FDB827" stroke-width="2.5"/><path d="M-3,-22 Q-8,-32 -5,-38" fill="none" stroke="#fff" stroke-width="2"/><path d="M3,-22 Q8,-32 5,-38" fill="none" stroke="#fff" stroke-width="2"/><path d="M-7,0 Q-18,4 -20,-4" fill="none" stroke="#FDB827" stroke-width="1.8"/><path d="M7,0 Q18,4 20,-4" fill="none" stroke="#FDB827" stroke-width="1.8"/><path d="M-7,6 Q-18,12 -20,20" fill="none" stroke="#FDB827" stroke-width="1.8"/><path d="M7,6 Q18,12 20,20" fill="none" stroke="#FDB827" stroke-width="1.8"/></g>
+        </g>
+        <path d="M28,32 L52,110" stroke="rgba(255,255,255,0.5)" stroke-width="4"/>
+        <path d="M352,32 L328,110" stroke="rgba(255,255,255,0.5)" stroke-width="4"/>
+      </svg>
+      <span>// Back</span>
+    </div>
+  </div>
+  <div class="divider"></div>
+</div>
+
+<!-- ══════════════════════════════════════════════════ -->
+<!--  DESIGN 4 — "FLOWER POWER"                       -->
+<!-- ══════════════════════════════════════════════════ -->
+<div class="design-block">
+  <div class="design-title">
+    <div class="design-num">04</div>
+    <div class="design-name">
+      <h2>FLOWER POWER</h2>
+      <p>พื้นขาว · ดอกธรรมรักษาใหญ่เต็มอก · Gradient แสด-เหลือง · ฟอนต์ Righteous</p>
+    </div>
+  </div>
+  <div class="shirts-row">
+    <div class="shirt-wrap">
+      <svg class="shirt" viewBox="0 0 380 440" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <linearGradient id="p4oy" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0%" stop-color="#F4622A"/>
+            <stop offset="100%" stop-color="#FDB827"/>
+          </linearGradient>
+          <linearGradient id="p4bg" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0%" stop-color="#fff"/>
+            <stop offset="100%" stop-color="#FFF8F2"/>
+          </linearGradient>
+          <filter id="gf4"><feGaussianBlur stdDeviation="6"/></filter>
+          <clipPath id="sc4">
+            <path d="M78,4 L28,32 L2,92 L52,110 L52,434 L328,434 L328,110 L378,92 L352,32 L302,4 L262,46 C242,66 222,73 190,73 C158,73 138,66 118,46 Z"/>
+          </clipPath>
+        </defs>
+        <path d="M78,4 L28,32 L2,92 L52,110 L52,434 L328,434 L328,110 L378,92 L352,32 L302,4 L262,46 C242,66 222,73 190,73 C158,73 138,66 118,46 Z" fill="url(#p4bg)" stroke="#ddd" stroke-width="1"/>
+        <g clip-path="url(#sc4)">
+          <!-- Glow blob under flower -->
+          <ellipse cx="190" cy="220" rx="110" ry="110" fill="rgba(253,184,39,0.12)" filter="url(#gf4)"/>
+          <!-- Top collar band gradient -->
+          <rect x="52" y="106" width="276" height="12" fill="url(#p4oy)"/>
+          <!-- Side color panels -->
+          <polygon points="52,110 52,434 100,434 52,200" fill="rgba(244,98,42,0.06)"/>
+          <polygon points="328,110 328,434 280,434 328,200" fill="rgba(244,98,42,0.06)"/>
+          <!-- Bottom band -->
+          <rect x="52" y="422" width="276" height="12" fill="url(#p4oy)"/>
+        </g>
+        <!-- BIG FLOWER CENTER — ดอกธรรมรักษา 8 กลีบ -->
+        <g transform="translate(190,220)">
+          <!-- Outer glow petals -->
+          <ellipse cx="0" cy="-72" rx="18" ry="38" fill="rgba(253,184,39,0.25)" filter="url(#gf4)"/>
+          <ellipse cx="0" cy="-72" rx="18" ry="38" fill="rgba(253,184,39,0.25)" filter="url(#gf4)" transform="rotate(45)"/>
+          <ellipse cx="0" cy="-72" rx="18" ry="38" fill="rgba(253,184,39,0.25)" filter="url(#gf4)" transform="rotate(90)"/>
+          <ellipse cx="0" cy="-72" rx="18" ry="38" fill="rgba(253,184,39,0.25)" filter="url(#gf4)" transform="rotate(135)"/>
+          <!-- Main petals orange -->
+          <ellipse cx="0" cy="-68" rx="16" ry="34" fill="url(#p4oy)" opacity="0.85"/>
+          <ellipse cx="0" cy="-68" rx="16" ry="34" fill="url(#p4oy)" opacity="0.75" transform="rotate(45)"/>
+          <ellipse cx="0" cy="-68" rx="16" ry="34" fill="url(#p4oy)" opacity="0.75" transform="rotate(90)"/>
+          <ellipse cx="0" cy="-68" rx="16" ry="34" fill="url(#p4oy)" opacity="0.75" transform="rotate(135)"/>
+          <!-- Inner petals yellow -->
+          <ellipse cx="0" cy="-56" rx="10" ry="24" fill="#FDB827" opacity="0.9"/>
+          <ellipse cx="0" cy="-56" rx="10" ry="24" fill="#FDB827" opacity="0.8" transform="rotate(45)"/>
+          <ellipse cx="0" cy="-56" rx="10" ry="24" fill="#FDB827" opacity="0.8" transform="rotate(90)"/>
+          <ellipse cx="0" cy="-56" rx="10" ry="24" fill="#FDB827" opacity="0.8" transform="rotate(135)"/>
+          <!-- Center disk -->
+          <circle cx="0" cy="0" r="28" fill="url(#p4oy)"/>
+          <circle cx="0" cy="0" r="22" fill="#FDB827"/>
+          <!-- Ant in center -->
+          <ellipse cx="0" cy="10" rx="7" ry="10" fill="#fff" stroke="#F4622A" stroke-width="1.5"/>
+          <ellipse cx="0" cy="-2" rx="5" ry="5" fill="#fff" stroke="#F4622A" stroke-width="1.5"/>
+          <ellipse cx="0" cy="-12" rx="5" ry="4.5" fill="#fff" stroke="#F4622A" stroke-width="1.5"/>
+          <path d="M-2,-16 Q-7,-24 -5,-30" fill="none" stroke="#F4622A" stroke-width="1.2"/>
+          <path d="M2,-16 Q7,-24 5,-30" fill="none" stroke="#F4622A" stroke-width="1.2"/>
+          <path d="M-5,0 Q-13,3 -15,-3" fill="none" stroke="#F4622A" stroke-width="1"/>
+          <path d="M5,0 Q13,3 15,-3" fill="none" stroke="#F4622A" stroke-width="1"/>
+          <path d="M-5,4 Q-13,8 -14,14" fill="none" stroke="#F4622A" stroke-width="1"/>
+          <path d="M5,4 Q13,8 14,14" fill="none" stroke="#F4622A" stroke-width="1"/>
+          <path d="M-5,14 Q-11,18 -11,24" fill="none" stroke="#F4622A" stroke-width="1"/>
+          <path d="M5,14 Q11,18 11,24" fill="none" stroke="#F4622A" stroke-width="1"/>
+        </g>
+        <!-- Text below flower -->
+        <text x="190" y="326" text-anchor="middle" font-family="'Righteous',cursive" font-size="36" fill="#F4622A" stroke="#fff" stroke-width="3" paint-order="stroke">KMUTT</text>
+        <text x="190" y="365" text-anchor="middle" font-family="'Righteous',cursive" font-size="44" fill="url(#p4oy)" stroke="#fff" stroke-width="3" paint-order="stroke">67</text>
+        <!-- sleeve -->
+        <path d="M28,32 L52,110" stroke="url(#p4oy)" stroke-width="6"/>
+        <path d="M32,55 L56,130" stroke="rgba(253,184,39,0.4)" stroke-width="2.5"/>
+        <path d="M352,32 L328,110" stroke="url(#p4oy)" stroke-width="6"/>
+        <path d="M348,55 L324,130" stroke="rgba(253,184,39,0.4)" stroke-width="2.5"/>
+      </svg>
+      <span>// Front</span>
+    </div>
+    <div class="shirt-wrap">
+      <svg class="shirt" viewBox="0 0 380 440" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <clipPath id="sc4b">
+            <path d="M78,4 L28,32 L2,92 L52,110 L52,434 L328,434 L328,110 L378,92 L352,32 L302,4 L262,46 C242,66 222,73 190,73 C158,73 138,66 118,46 Z"/>
+          </clipPath>
+        </defs>
+        <path d="M78,4 L28,32 L2,92 L52,110 L52,434 L328,434 L328,110 L378,92 L352,32 L302,4 L262,46 C242,66 222,73 190,73 C158,73 138,66 118,46 Z" fill="url(#p4bg)" stroke="#ddd" stroke-width="1"/>
+        <g clip-path="url(#sc4b)">
+          <rect x="52" y="106" width="276" height="12" fill="url(#p4oy)"/>
+          <rect x="52" y="422" width="276" height="12" fill="url(#p4oy)"/>
+          <!-- Big number ghost -->
+          <text x="190" y="310" text-anchor="middle" font-family="'Righteous',cursive" font-size="220" fill="rgba(244,98,42,0.06)" clip-path="url(#sc4b)">67</text>
+        </g>
+        <!-- Small flower top -->
+        <g transform="translate(190,148) scale(0.55)">
+          <ellipse cx="0" cy="-68" rx="16" ry="34" fill="url(#p4oy)" opacity="0.7"/>
+          <ellipse cx="0" cy="-68" rx="16" ry="34" fill="url(#p4oy)" opacity="0.6" transform="rotate(60)"/>
+          <ellipse cx="0" cy="-68" rx="16" ry="34" fill="url(#p4oy)" opacity="0.6" transform="rotate(120)"/>
+          <ellipse cx="0" cy="-68" rx="16" ry="34" fill="url(#p4oy)" opacity="0.6" transform="rotate(180)"/>
+          <ellipse cx="0" cy="-68" rx="16" ry="34" fill="url(#p4oy)" opacity="0.6" transform="rotate(240)"/>
+          <ellipse cx="0" cy="-68" rx="16" ry="34" fill="url(#p4oy)" opacity="0.6" transform="rotate(300)"/>
+          <circle cx="0" cy="0" r="22" fill="#FDB827"/>
+        </g>
+        <text x="190" y="235" text-anchor="middle" font-family="'Righteous',cursive" font-size="64" fill="#F4622A" stroke="rgba(244,98,42,0.15)" stroke-width="8" paint-order="stroke">KMUTT</text>
+        <text x="190" y="305" text-anchor="middle" font-family="'Righteous',cursive" font-size="80" fill="url(#p4oy)" stroke="rgba(244,98,42,0.15)" stroke-width="8" paint-order="stroke">67</text>
+        <text x="190" y="332" text-anchor="middle" font-family="'Rajdhani',sans-serif" font-weight="700" font-size="11" letter-spacing="4" fill="#F4622A">FRESHMAN · 2024</text>
+        <path d="M28,32 L52,110" stroke="url(#p4oy)" stroke-width="6"/>
+        <path d="M352,32 L328,110" stroke="url(#p4oy)" stroke-width="6"/>
+      </svg>
+      <span>// Back</span>
+    </div>
+  </div>
+  <div class="divider"></div>
+</div>
+
+<!-- ══════════════════════════════════════════════════ -->
+<!--  DESIGN 5 — "SPLIT PANEL"                        -->
+<!-- ══════════════════════════════════════════════════ -->
+<div class="design-block">
+  <div class="design-title">
+    <div class="design-num">05</div>
+    <div class="design-name">
+      <h2>SPLIT PANEL</h2>
+      <p>ซีกแสด + ซีกขาว · แนว Sport jersey premium · ฟอนต์ Russo One + shadow</p>
+    </div>
+  </div>
+  <div class="shirts-row">
+    <div class="shirt-wrap">
+      <svg class="shirt" viewBox="0 0 380 440" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <linearGradient id="s5left" x1="0" y1="0" x2="1" y2="0">
+            <stop offset="0%" stop-color="#F4622A"/>
+            <stop offset="100%" stop-color="#F97530"/>
+          </linearGradient>
+          <linearGradient id="s5yel" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0%" stop-color="#FDB827"/>
+            <stop offset="100%" stop-color="#F4622A"/>
+          </linearGradient>
+          <clipPath id="sc5">
+            <path d="M78,4 L28,32 L2,92 L52,110 L52,434 L328,434 L328,110 L378,92 L352,32 L302,4 L262,46 C242,66 222,73 190,73 C158,73 138,66 118,46 Z"/>
+          </clipPath>
+          <filter id="sh5"><feDropShadow dx="2" dy="2" stdDeviation="3" flood-color="rgba(244,98,42,0.5)"/></filter>
+        </defs>
+        <path d="M78,4 L28,32 L2,92 L52,110 L52,434 L328,434 L328,110 L378,92 L352,32 L302,4 L262,46 C242,66 222,73 190,73 C158,73 138,66 118,46 Z" fill="#fff" stroke="#ddd" stroke-width="1"/>
+        <g clip-path="url(#sc5)">
+          <!-- Left half orange -->
+          <path d="M52,110 L52,434 L220,434 L180,110 Z" fill="url(#s5left)"/>
+          <!-- Curved divider -->
+          <path d="M180,110 Q200,270 220,434" fill="none" stroke="#FDB827" stroke-width="4"/>
+          <path d="M184,110 Q204,270 224,434" fill="none" stroke="rgba(255,255,255,0.4)" stroke-width="2"/>
+          <!-- White side thin stripe -->
+          <path d="M175,110 Q195,270 215,434 L210,434 Q190,270 170,110 Z" fill="rgba(255,255,255,0.3)"/>
+          <!-- Collar full orange -->
+          <rect x="52" y="106" width="276" height="10" fill="url(#s5left)"/>
+          <rect x="52" y="106" width="276" height="3" fill="#FDB827"/>
+          <!-- Orange sleeve left -->
+          <path d="M2,92 L28,32 L78,4 L52,110 Z" fill="url(#s5left)"/>
+          <!-- Bottom band -->
+          <rect x="52" y="422" width="276" height="12" fill="url(#s5left)"/>
+          <rect x="52" y="425" width="276" height="4" fill="#FDB827"/>
+          <!-- Stripe on white side -->
+          <line x1="245" y1="110" x2="280" y2="434" stroke="rgba(244,98,42,0.15)" stroke-width="2"/>
+          <line x1="265" y1="110" x2="305" y2="434" stroke="rgba(244,98,42,0.08)" stroke-width="1.5"/>
+        </g>
+        <!-- Left chest badge on orange -->
+        <text x="110" y="160" text-anchor="middle" font-family="'Russo One',sans-serif" font-size="11" letter-spacing="1" fill="#fff" opacity="0.9">KMUTT</text>
+        <text x="110" y="177" text-anchor="middle" font-family="'Russo One',sans-serif" font-size="22" fill="#FDB827" filter="url(#sh5)">67</text>
+        <!-- Ant on orange -->
+        <g transform="translate(110,195) scale(0.42)">
+          <ellipse cx="0" cy="16" rx="11" ry="14" fill="none" stroke="#fff" stroke-width="2.5"/>
+          <ellipse cx="0" cy="-2" rx="7" ry="7" fill="none" stroke="#fff" stroke-width="2.5"/>
+          <ellipse cx="0" cy="-16" rx="7" ry="6" fill="none" stroke="#fff" stroke-width="2.5"/>
+          <path d="M-3,-22 Q-12,-34 -8,-42" fill="none" stroke="#FDB827" stroke-width="2"/>
+          <path d="M3,-22 Q12,-34 8,-42" fill="none" stroke="#FDB827" stroke-width="2"/>
+          <path d="M-7,0 Q-20,4 -24,-4" fill="none" stroke="#fff" stroke-width="1.5"/>
+          <path d="M7,0 Q20,4 24,-4" fill="none" stroke="#fff" stroke-width="1.5"/>
+          <path d="M-7,6 Q-20,12 -22,22" fill="none" stroke="#fff" stroke-width="1.5"/>
+          <path d="M7,6 Q20,12 22,22" fill="none" stroke="#fff" stroke-width="1.5"/>
+          <path d="M-8,20 Q-18,28 -18,36" fill="none" stroke="#fff" stroke-width="1.5"/>
+          <path d="M8,20 Q18,28 18,36" fill="none" stroke="#fff" stroke-width="1.5"/>
+        </g>
+        <!-- Flower on white side -->
+        <g transform="translate(268,210) scale(0.6)">
+          <ellipse cx="0" cy="-60" rx="13" ry="28" fill="rgba(244,98,42,0.6)" stroke="#F4622A" stroke-width="1.5"/>
+          <ellipse cx="0" cy="-60" rx="13" ry="28" fill="rgba(244,98,42,0.5)" stroke="#F4622A" stroke-width="1.5" transform="rotate(60)"/>
+          <ellipse cx="0" cy="-60" rx="13" ry="28" fill="rgba(244,98,42,0.5)" stroke="#F4622A" stroke-width="1.5" transform="rotate(120)"/>
+          <ellipse cx="0" cy="-60" rx="13" ry="28" fill="rgba(253,184,39,0.6)" stroke="#FDB827" stroke-width="1.5" transform="rotate(180)"/>
+          <ellipse cx="0" cy="-60" rx="13" ry="28" fill="rgba(253,184,39,0.5)" stroke="#FDB827" stroke-width="1.5" transform="rotate(240)"/>
+          <ellipse cx="0" cy="-60" rx="13" ry="28" fill="rgba(253,184,39,0.5)" stroke="#FDB827" stroke-width="1.5" transform="rotate(300)"/>
+          <circle cx="0" cy="0" r="18" fill="#FDB827" stroke="#F4622A" stroke-width="2"/>
+          <circle cx="0" cy="0" r="10" fill="#F4622A"/>
+        </g>
+        <!-- Right side KMUTT 67 text on white -->
+        <text x="262" y="310" text-anchor="middle" font-family="'Russo One',sans-serif" font-size="18" fill="#F4622A" opacity="0.7">KMUTT</text>
+        <text x="262" y="338" text-anchor="middle" font-family="'Russo One',sans-serif" font-size="32" fill="#F4622A" filter="url(#sh5)">67</text>
+        <!-- Right sleeve white with accent -->
+        <path d="M378,92 L352,32 L302,4 L328,110 Z" fill="#fff" stroke="#ddd" stroke-width="1"/>
+        <path d="M352,32 L328,110" stroke="url(#s5yel)" stroke-width="5"/>
+      </svg>
+      <span>// Front</span>
+    </div>
+    <div class="shirt-wrap">
+      <svg class="shirt" viewBox="0 0 380 440" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <clipPath id="sc5b">
+            <path d="M78,4 L28,32 L2,92 L52,110 L52,434 L328,434 L328,110 L378,92 L352,32 L302,4 L262,46 C242,66 222,73 190,73 C158,73 138,66 118,46 Z"/>
+          </clipPath>
+        </defs>
+        <path d="M78,4 L28,32 L2,92 L52,110 L52,434 L328,434 L328,110 L378,92 L352,32 L302,4 L262,46 C242,66 222,73 190,73 C158,73 138,66 118,46 Z" fill="#fff" stroke="#ddd" stroke-width="1"/>
+        <g clip-path="url(#sc5b)">
+          <!-- Back: right half orange (mirror) -->
+          <path d="M328,110 L328,434 L160,434 L200,110 Z" fill="url(#s5left)"/>
+          <path d="M200,110 Q180,270 160,434" fill="none" stroke="#FDB827" stroke-width="4"/>
+          <path d="M204,110 Q184,270 164,434 L169,434 Q189,270 209,110 Z" fill="rgba(255,255,255,0.3)"/>
+          <rect x="52" y="106" width="276" height="10" fill="url(#s5left)"/>
+          <rect x="52" y="106" width="276" height="3" fill="#FDB827"/>
+          <path d="M378,92 L352,32 L302,4 L328,110 Z" fill="url(#s5left)"/>
+          <rect x="52" y="422" width="276" height="12" fill="url(#s5left)"/>
+          <rect x="52" y="425" width="276" height="4" fill="#FDB827"/>
+          <line x1="135" y1="110" x2="100" y2="434" stroke="rgba(244,98,42,0.15)" stroke-width="2"/>
+        </g>
+        <!-- Back large text -->
+        <text x="168" y="220" text-anchor="middle" font-family="'Russo One',sans-serif" font-size="56" fill="#fff" clip-path="url(#sc5b)">KMUTT</text>
+        <text x="250" y="230" text-anchor="middle" font-family="'Russo One',sans-serif" font-size="56" fill="#F4622A" stroke="rgba(244,98,42,0.3)" stroke-width="3" paint-order="stroke" clip-path="url(#sc5b)">KMUTT</text>
+        <!-- Layered for split effect -->
+        <text x="190" y="218" text-anchor="middle" font-family="'Russo One',sans-serif" font-size="56" fill="none" stroke="rgba(0,0,0,0.05)" stroke-width="1" clip-path="url(#sc5b)">KMUTT</text>
+        <text x="190" y="290" text-anchor="middle" font-family="'Russo One',sans-serif" font-size="90" fill="#fff" clip-path="url(#sc5b)" opacity="0.5">67</text>
+        <text x="190" y="287" text-anchor="middle" font-family="'Russo One',sans-serif" font-size="90" fill="#FDB827" clip-path="url(#sc5b)" filter="url(#sh5)">67</text>
+        <text x="190" y="322" text-anchor="middle" font-family="'Rajdhani',sans-serif" font-weight="700" font-size="10" letter-spacing="4" fill="#fff" clip-path="url(#sc5b)">FRESHMAN · KMUTT</text>
+        <!-- Left sleeve orange back -->
+        <path d="M2,92 L28,32 L78,4 L52,110 Z" fill="url(#s5left)"/>
+        <path d="M28,32 L52,110" stroke="url(#s5yel)" stroke-width="5"/>
+        <path d="M352,32 L328,110" stroke="url(#s5yel)" stroke-width="5"/>
+      </svg>
+      <span>// Back</span>
+    </div>
+  </div>
+</div>
+
+<!-- Footer -->
+<p style="text-align:center;font-family:'Rajdhani',sans-serif;font-size:0.75rem;letter-spacing:0.2em;color:rgba(255,255,255,0.2);margin-top:20px;">KMUTT 67 · DESIGNED FOR FRESHMAN WELCOME · PANTONE 172C + 123C</p>
+
+</body>
+</html>
+
